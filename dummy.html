@@ -11,20 +11,21 @@
             color: #e0e0e0;
         }
 
-   .custom-navbar {
-      background-color: #2C333A; 
-  }
+        .custom-navbar {
+            background-color: #2C333A;
+        }
 
-  .custom-navbar .nav-link {
-      color: #ffffff; /* link color */
-  }
+        .custom-navbar .nav-link {
+            color: #ffffff;
+        }
 
-  .custom-navbar .nav-link:hover {
-      color: #f0f0f0; /* hover effect */
-  }
-  .custom-text{
-    color: #DEE4EA;
-  }
+        .custom-navbar .nav-link:hover {
+            color: #f0f0f0;
+        }
+
+        .custom-text {
+            color: #DEE4EA;
+        }
 
 
         .gallery {
@@ -55,7 +56,7 @@
         }
 
         footer {
-            background-color:#596773;;
+            background-color: #596773;;
         }
 
         footer a {
@@ -65,6 +66,7 @@
         footer a:hover {
             color: #fff;
         }
+    </style>
     </style>
 </head>
 <body>
@@ -77,37 +79,69 @@
     <h1 class="text-center mb-4">Image Gallery</h1>
 
 
-    <nav class="navbar-expand-lg custom-navbar">
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+
+                <!-- Left side nav links -->
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html"><h2 class="custom-text mt-3 me-3">Home</h2></a>
+                        <a class="nav-link" href="index.html"><h2 class="custom-text mt-3 me-3">Home</h2></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="dummy.html"><h2 class="custom-text mt-3 me-3"> Photographers </h2></a>
+                        <a class="nav-link" href="photographerList.html"><h2 class="custom-text mt-3 me-3">
+                            Photographers</h2></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dummy.html"><h2 class="custom-text mt-3 me-3">Astrography</h2></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dummy.html"><h2 class="custom-text mt-3 me-3">Nature</h2></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false"><h2 class="custom-text mt-3 me-3">Vendors</h2>
+                           aria-expanded="false">
+                            <h2 class="custom-text mt-3 me-3">Vendors</h2>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class= "custom-text dropdown-item" href="vendor.html">Vendor 1</a></li>
-                            <li><a class="custom-text dropdown-item" href="vendor.html">Vendor 2</a></li>
-                            <li><a class="custom-text dropdown-item" href="vendor.html">Vendor 3</a></li>
-                            <li><a class="custom-text dropdown-item" href="vendor.html">Vendor 4</a></li>
+                            <li><a class="custom-text dropdown-item" href="photographer.html">Vendor 1</a></li>
+                            <li><a class="custom-text dropdown-item" href="photographer.html">Vendor 2</a></li>
+                            <li><a class="custom-text dropdown-item" href="photographer.html">Vendor 3</a></li>
+                            <li><a class="custom-text dropdown-item" href="photographer.html">Vendor 4</a></li>
                         </ul>
                     </li>
                 </ul>
+
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control mt-2 mb-2 me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success mt-2 mb-2" type="submit">Search</button>
+                </form>
+
+                <a href="vendor.html" class="btn btn-outline-success mt-2 mb-2">Login</a>
+
             </div>
         </div>
     </nav>
-<footer class="footer-color custom-text py-3 mt-5">
-    <div class="container text-center">
-        <p class="mb-1">&copy; 2025 Jisan's Website. All rights reserved.</p>
-     
+
+
+    <div class="gallery">
+
+        <img src="images/11.jpg" alt="Image 1">
+        <img src="images/12.jpg" alt="Image 2">
+        <img src="images/13.jpg" alt="Image 3">
+        <img src="images/14.jpg" alt="Image 4">
+        <img src="images/15.jpg" alt="Image 5">
+        <img src="images/16.jpg" alt="Image 6">
+        <img src="images/17.jpg" alt="Image 7">
+        <img src="images/18.jpg" alt="Image 8">
+        <img src="images/19.jpg" alt="Image 9">
     </div>
-</footer>
+    <footer class="footer-color custom-text py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Jisan's Website. All rights reserved.</p>
+
+        </div>
+    </footer>
 
 </div>
 </body>
