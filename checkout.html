@@ -67,7 +67,6 @@
             color: #fff;
         }
     </style>
-    </style>
 </head>
 <body>
 
@@ -76,8 +75,7 @@
 
 
 <div class="container">
-    <h1 class="text-center mb-4">Image Gallery</h1>
-
+    <h1 class="custom-text text-center mb-4">Image Gallery</h1>
 
 
     <nav class="navbar navbar-expand-lg custom-navbar">
@@ -132,25 +130,25 @@
             </div>
         </div>
     </nav>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="d-flex flex-column gap-3  col-sm-8  col-lg-4">
+            <label for="dateTimePicker" class="form-label">Pick Date & Time</label>
+            <input type="datetime-local" id="dateTimePicker" class="form-control">
 
-    <div class="gallery">
-
-        <img src="images/11.jpg" alt="Image 1">
-        <img src="images/12.jpg" alt="Image 2">
-        <img src="images/13.jpg" alt="Image 3">
-        <img src="images/14.jpg" alt="Image 4">
-        <img src="images/15.jpg" alt="Image 5">
-        <img src="images/16.jpg" alt="Image 6">
-        <img src="images/17.jpg" alt="Image 7">
-        <img src="images/18.jpg" alt="Image 8">
-        <img src="images/19.jpg" alt="Image 9">
+            <label for="location" class="form-label">Enter Location</label>
+            <input type="text" id="location" class="form-control" placeholder="Type a city or address">
+            <button class="btn btn-outline-success">Confirm Booking</button>
+        </div>
     </div>
+
+
     <footer class="footer-color custom-text py-3 mt-5">
         <div class="container text-center">
             <p class="mb-1">&copy; 2025 Jisan's Website. All rights reserved.</p>
 
         </div>
     </footer>
+
 
 </div>
 </body>
